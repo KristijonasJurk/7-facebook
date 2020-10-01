@@ -1,0 +1,16 @@
+.post {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 10px;
+    
+}
+    .post > header {
+
+    }
+    .post > div {
+        
+    }
+    .post > footer {
+        
+    }
