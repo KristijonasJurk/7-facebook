@@ -1,23 +1,25 @@
-function renderContentText() {
+function renderContentText(text) {
     const shortTextLength = 60;
-    const normalTextlength = 300;
-    const largeTextlength = 400;
+    const normalTextLength = 300;
+    const largeTextLength = 10000;
     const textLength = text.length;
 
     if (textLength <= shortTextLength) {
-        return `<p class='big-font> ${text} </p>`;
+        // kai labai mazai teksto - padydinam srifta
+        return `<p class="big-font">${text}</p>`;
     } else if (textLength <= normalTextLength) {
-        return `<p> ${text} </p>`;
+        // kai normaliai teksto - tiesiog atvaizduojam
+        return `<p>${text}</p>`;
     } else if (textLength <= largeTextLength) {
-        // nukerpam teksta ir pridedam see more..
-        let shortText = '';
-        for (let i=; i<normalTextlength; i) {
-            shortText += text[i];
+        // kai labai daug - nukerpam ir pridedam "... See more"
+        let shorterText = '';
+        for (let i = 0; i < normalTextLength; i++) {
+            shorterText += text[i];
         }
-        return `<p> ${shortText}<span class= "See-more"> See more </span></p>`;
+        return `<p>${shorterText}... <span class="see-more">See more</span></p>`;
     } else {
-        // virs 10k, rodom klaida
-        console.log(`ERROR: virsyta maksimali (${largeTextlength}) teksto riba`);
+        // o jei teksto daugiau nei leidziama maksimaliai - rodom klaida
+        console.warn(`ERROR: virsyta maksimali (${largeTextLength}) leistina teksto riba.`);
         return '';
     }
 }
