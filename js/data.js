@@ -1,15 +1,22 @@
 /*
 autoriaus
-    posto autoriaus ft
-    posto autoriaus vardas
-    ir pavarde
-    link
-posto parasymo laikas
-posto turinys
+    nuotrauka
+    vardas
+    pavarde
+parasymo laikas
+turinys
     tekstas
     nuotrauku sarasas
     fonas
 */
+/*
+Teksto apimtys:
+- mazai: 1-60
+- vidutiniskai: 61-300
+- daug: 301-10000
+*/
+
+
 
 const posts = [
     // {
@@ -19,7 +26,7 @@ const posts = [
     //         lastname: '',
     //         link: ''
     //     },
-    //     postTimestamp: 1595402689570,             // miliseconds nuo 1970-01-01 00:00:00
+    //     postTimestamp: 1595402689570,     // miliseconds nuo 1970-01-01 00:00:00
     //     content: {
     //         text: '',
     //         photos: [],

@@ -33,4 +33,3 @@ function renderContentGallery(photoArray) {
 }
 
 export default renderContentGallery;
-© 2020 GitHub, Inc.

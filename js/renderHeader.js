@@ -1,4 +1,3 @@
-  
 function renderHeader(data, time) {
     return `<header class="post-header">
                 <a class="avatar-link" href="#user/${data.link}">
