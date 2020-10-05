@@ -11,6 +11,14 @@
     .post > div {
         
     }
+        .big-font {
+            font-size: 30px;
+        }
+        .see-more{
+            color: blue;
+            cursor: pointer;
+        }
+
     .post > footer {
         
     }
