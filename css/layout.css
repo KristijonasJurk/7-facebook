@@ -1,26 +1,27 @@
 body {
     display: grid;
-    grid-template-columns: 200px 1fr 240px;
-    grid-template-areas: 
+    grid-template-columns: 100px 1fr 140px;
+    grid-template-areas:
         "head head head"
         "menu feed msg";
 }
 
 body > header {
     grid-area: head;
-    background-color: blue;
+    background-color: #3366ff;
 }
 
 body > aside {
-    background-color: forestgreen;
+    background-color: #ccc;
 }
-body > .menu {
-    grid-area: menu;;
+.menu {
+    grid-area: menu;
 }
 .messenger {
     grid-area: msg;
 }
 
-main {
-    
+body > main {
+    grid-area: feed;
+    padding: 40px;
 }

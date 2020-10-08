@@ -1,10 +1,15 @@
-function renderHeader(data) {
-    console.log(data);
+import formatTime from './formatTime.js';
+
+function renderHeader(data, time) {
     return `<header class="post-header">
-                <img class="avatar" src"./img/users/homer-simpson.jpg" alt="User profile picture"></img>
+                <a class="avatar-link" href="#user/${data.link}">
+                    <img class="avatar" src="./img/users/${data.photo}" alt="User profile picture">
+                </a>
                 <div class="post-user">
-                    <a  href="#">${data.name} ${data.lastname}</a>
-                    
+                    <a class="user" href="#user/${data.link}">${data.name} ${data.lastname}</a>
+                    <div class="timestamp">${formatTime(time)}</div>
+                </div>
+                <i class="fa fa-ellipsis-h"></i>
             </header>`;
 }
 
